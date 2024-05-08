@@ -1,0 +1,51 @@
+.scrolling {
+  animation: fadeInDown 0.9s 1;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.text-stroke-white-grey {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255, 0.12);
+}
+.text-stroke-dark-grey {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgba(10, 10, 10, 0.6);
+}
+
+.radial-gradient-dark {
+  background: rgb(10, 10, 10);
+  background: radial-gradient(
+    circle,
+    rgba(10, 10, 10, 0.34) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+}
+
+.horizontal-slide-from-right-to-left {
+  animation: horizontal-slide-from-right-to-left linear 10s infinite;
+}
+
+@keyframes horizontal-slide-from-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
